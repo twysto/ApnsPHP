@@ -11,6 +11,7 @@ class ApnsPHP_Message_Safari extends ApnsPHP_Message
 	protected $_sTitle; /**< @type string The title of the notification. */
 	protected $_sAction; /**< @type string The label of the action button, if the user sets the notifications to appear as alerts. */
 	protected $_aUrlArgs; /**< @type array Variable string values to appear in place of the format specifiers in urlFormatString. */
+
 	/**
 	 * Set the title of the notification.
 	 *
@@ -20,6 +21,7 @@ class ApnsPHP_Message_Safari extends ApnsPHP_Message
 	{
 		$this->_sTitle = $sTitle;
 	}
+
 	/**
 	 * Get the title of the notification.
 	 *
@@ -29,6 +31,7 @@ class ApnsPHP_Message_Safari extends ApnsPHP_Message
 	{
 		return $this->_sTitle;
 	}
+
 	/**
 	 * Set the label of the action button, if the user sets the notifications to appear as alerts.
 	 *
@@ -38,6 +41,7 @@ class ApnsPHP_Message_Safari extends ApnsPHP_Message
 	{
 		$this->_sAction = $sAction;
 	}
+
 	/**
 	 * Get the label of the action button, if the user sets the notifications to appear as alerts.
 	 *
@@ -47,6 +51,7 @@ class ApnsPHP_Message_Safari extends ApnsPHP_Message
 	{
 		return $this->_sAction;
 	}
+
 	/**
 	 * Set the variable string values to appear in place of the format specifiers
 	 * in urlFormatString.
@@ -57,6 +62,7 @@ class ApnsPHP_Message_Safari extends ApnsPHP_Message
 	{
 		$this->_aUrlArgs = $aUrlArgs;
 	}
+
 	/**
 	 * Get the variable string values to appear in place of the format specifiers
 	 * in urlFormatString.
@@ -67,6 +73,7 @@ class ApnsPHP_Message_Safari extends ApnsPHP_Message
 	{
 		return $this->_aUrlArgs;
 	}
+
 	/**
 	 * Get the payload dictionary.
 	 *
